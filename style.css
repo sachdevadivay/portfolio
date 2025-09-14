@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.6;
+  background: url("assets/bg.jpg") center center repeat;
+  background-size: cover;
+  color: var(--text, #333333);
+  transition: background 0.3s, color 0.3s;
+}
+header {
+  text-align: center;
+  padding: 2rem;
+  background: var(--header, rgba(0, 119, 255, 0.9));
+  color: white;
+}
+header nav {
+  margin: 10px 0;
+}
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.about, .skills, .journey, .contact {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255,255,255,0.85);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.about img {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.about .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #0077ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.skills .skill {
+  margin: 15px 0;
+}
+.skills .bar {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.skills .bar span {
+  display: block;
+  height: 12px;
+  background: #0077ff;
+}
+.journey .timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.journey .step {
+  background: var(--card, rgba(249,249,249,0.9));
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform .25s ease;
+}
+.journey .step:hover {
+  transform: translateY(-5px);
+}
+.journey h3 {
+  color: #0077ff;
+  margin-bottom: 8px;
+}
+.contact .resume-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+.contact .resume-buttons .btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #0077ff;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.contact .resume-buttons .btn:hover {
+  background: #005fcc;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--header, rgba(0, 119, 255, 0.9));
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+/* Dark Mode */
+.dark {
+  --bg: rgba(18, 18, 18, 0.85);
+  --text: #e0e0e0;
+  --header: rgba(31, 31, 31, 0.9);
+  --card: rgba(30, 30, 30, 0.9);
+  background: url("assets/bg-dark.jpg") center center repeat;
+  background-size: cover;
+}
